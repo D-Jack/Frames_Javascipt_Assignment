@@ -3,7 +3,6 @@ let framedata;
 console.log(framedata);
 let frameNo = 0;
 const nextBtn = document.getElementById("next");
-const conBtn = document.getElementById("con");
 const prevBtn = document.getElementById("prev");
 const submitBtn = document.getElementById("submit");
 
@@ -27,6 +26,7 @@ function nextEntry() {
   }
   frameNo++;
   setVideoUrl(frameNo);
+  document.getElementById("1").checked = true;
   prevBtn.disabled = false;
 }
 function prevEntry() {
@@ -36,6 +36,7 @@ function prevEntry() {
   }
   frameNo--;
   setVideoUrl(frameNo);
+  document.getElementById("1").checked = true;
   nextBtn.disabled = false;
 }
 function con() {
@@ -64,5 +65,4 @@ function submitHandler() {
 
 nextBtn.addEventListener("click", nextEntry);
 prevBtn.addEventListener("click", prevEntry);
-conBtn.addEventListener("click", con);
 submitBtn.addEventListener("click", submitHandler);
