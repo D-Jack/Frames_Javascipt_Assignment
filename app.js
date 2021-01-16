@@ -1,7 +1,5 @@
-let framedata;
-
-console.log(framedata);
 let frameNo = 0;
+
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 const submitBtn = document.getElementById("submit");
