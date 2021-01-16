@@ -1,0 +1,114 @@
+.cc-selector {
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+#activeVideo {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+  text-align: center;
+}
+.cc-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.cc-selector input:active + .drinkcard-cc {
+  opacity: 0.5;
+}
+.cc-selector input:checked + .drinkcard-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.drinkcard-cc {
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  max-width: 300px;
+  min-width: 200px;
+  height: 150px;
+  margin: auto;
+  /* -webkit-transition: all 100ms ease-in;
+      -moz-transition: all 100ms ease-in;
+           transition: all 100ms ease-in; */
+  -webkit-filter: brightness(1) grayscale(5) opacity(0.7);
+  -moz-filter: brightness(1) grayscale(5) opacity(0.7);
+  filter: brightness(1) grayscale(5) opacity(0.7);
+}
+.drinkcard-cc:hover {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+button {
+  font: inherit;
+  background: #ff0062;
+  border: 1px solid #ff0062;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+button:focus {
+  outline: none;
+}
+button:disabled {
+  background: #7e7e7e;
+}
+
+button:active {
+  background: #a927f5;
+  border-color: #a927f5;
+}
+
+#controls {
+  margin: 2rem auto;
+  width: 30rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+  /* display: flex; */
+  /* flex-grow: 1; */
+  /* flex-direction: row; */
+}
+#controls #next {
+  float: right;
+}
+#controls #prev {
+  float: left;
+}
+#controls #submit {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin-top: 70px;
+}
+
+/* .box{
+   color: #fff;
+   padding: 20px;
+   display: none;
+   margin-top: 20px;
+}
+.red{ background: #ff0000; }
+.green{ background: #228B22; }
+.blue{ background: #0000ff; }
+label{ margin-right: 15px; } */
+
+.visible {
+  display: block;
+}
