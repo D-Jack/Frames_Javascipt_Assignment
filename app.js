@@ -10,10 +10,9 @@ const submitBtn = document.getElementById("submit");
 function setVideoUrl(frameNo) {
   const activeVideo = document.getElementById("activeVideo");
   activeVideo.innerHTML = 
-  `<video width="${videoWidth}" controls>
-    <source src="${videoUrl[frameNo]}" type="video/mp4">
-    Your browser does not support HTML video.
-  </video>`;
+  `<source src="${videoUrl[frameNo]}" type="video/mp4">
+    Your browser does not support HTML video.`
+  ;
 }
 
 function editEntry(inputId) {

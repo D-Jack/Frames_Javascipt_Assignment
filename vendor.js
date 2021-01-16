@@ -1,6 +1,6 @@
 //global variables
 const videoUrl = [];
-const videoWidth = 500;
+
 function fetchdata() {
   fetch("http://www.mocky.io/v2/5ed5fda4340000740006d560?mocky-delay=500ms")
     .then((Response) => {
@@ -37,10 +37,10 @@ function getVideoUrl(data) {
     videoUrl.push(frameEl.url);
   }
   const activeVideo = document.getElementById("activeVideo");
-  activeVideo.innerHTML = `<video width="${videoWidth}" controls>
-    <source src="${videoUrl[0]}" type="video/mp4">
+  activeVideo.innerHTML = 
+  `<source src="${videoUrl[0]}" type="video/mp4">
     Your browser does not support HTML video.
-  </video>`;
+  `;
 }
 
 const setUrlBackground = (data) => {
