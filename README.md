@@ -1,7 +1,7 @@
 <h1>Javascript Functioning Project</h1>
 <ul><header>Content</header>
-<a href="#about-this-project">About this Project</a>
-<a href="#applied-media-query">Applied media query</a>
+<a href="#about-this-project">About this Project</a>,
+<a href="#applied-media-query">Applied media query</a>,
 <a href="#disabled-buttons-on-the-start-and-end.">Disabled buttons on the start and end.</a>
 <h3>About this Project</h3>
 
