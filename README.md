@@ -1,8 +1,10 @@
 <h1>Javascript Functioning Project</h1>
-<content>
+<ul><header>Content</header>
+<a href="#about-this-project">About this Project</a>
 <a href="#applied-media-query">Applied media query</a>
+<a href="#disabled-buttons-on-the-start-and-end.">Disabled buttons on the start and end.</a>
 <h3>About this Project</h3>
-</content>
+
 <p>In this Project I have made frame selector with 5 diff options (fetched object from API which contain the URL of video and images) to select respective to each part of video and  till we have 5 frames selected for 5 diff video parts(total combinations of 5^5) which also changes with next and prev button according to the .In which at the last I am posting a request to API of the path which the user takes whlie selecting frames.</p>
 
 <img src="imgsrc/present1.png" alt="frames and there UI ">
