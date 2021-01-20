@@ -36,10 +36,13 @@ function getVideoUrl(data) {
   for (const frameEl of data) {
     videoUrl.push(frameEl.url);
   }
-  const activeVideo = document.getElementById("activeVideo");
-  activeVideo.innerHTML = 
-  `<source src="${videoUrl[0]}" type="video/mp4">
-    Your browser does not support HTML video.
+
+  const compClassVideo = document.querySelector('.compClassVideo');
+  compClassVideo.innerHTML =
+  `<video  id="activeVideo" controls>
+  <source src="${videoUrl[0]}" type="video/mp4">
+  Your browser does not support HTML video.
+  </video>
   `;
 }
 

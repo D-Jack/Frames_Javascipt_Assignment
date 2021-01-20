@@ -5,10 +5,13 @@ const prevBtn = document.getElementById("prev");
 const submitBtn = document.getElementById("submit");
 
 function setVideoUrl(frameNo) {
-  const activeVideo = document.getElementById("activeVideo");
-  activeVideo.innerHTML = 
-  `<source src="${videoUrl[frameNo]}" type="video/mp4">
-    Your browser does not support HTML video.`
+  const compClassVideo = document.querySelector('.compClassVideo');
+  compClassVideo.innerHTML =
+    `<video  id="activeVideo" controls>
+    <source src="${videoUrl[frameNo]}" type="video/mp4">
+    Your browser does not support HTML video.
+    </video>
+  `
   ;
 }
 
